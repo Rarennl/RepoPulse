@@ -1,0 +1,64 @@
+x-service: &service
+  build: .
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    DATABASE_URL: postgresql+psycopg://health:${POSTGRES_PASSWORD:-local-dev-only}@db:5432/health
+    REDIS_URL: redis://redis:6379/0
+    KEY_FILE: /state/token.key
+  volumes:
+    - state:/state
+  depends_on:
+    db:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+  restart: unless-stopped
+  read_only: true
+  tmpfs:
+    - /tmp:size=1200m,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+services:
+  db:
+    image: postgres:16.8-alpine
+    environment:
+      POSTGRES_USER: health
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-dev-only}
+      POSTGRES_DB: health
+    volumes: ["postgres:/var/lib/postgresql/data"]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U health -d health"]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+  redis:
+    image: redis:7.4.2-alpine
+    command: [redis-server, --appendonly, "yes", --maxmemory, 256mb, --maxmemory-policy, noeviction]
+    volumes: ["redis:/data"]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+  api:
+    <<: *service
+    ports: ["127.0.0.1:8000:8000"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/ready')"]
+      interval: 15s
+      retries: 5
+  worker:
+    <<: *service
+    command: [python, -m, app.worker]
+    mem_limit: 2g
+    cpus: 2
+  scheduler:
+    <<: *service
+    command: [python, -m, app.scheduler]
+volumes:
+  postgres:
+  redis:
+  state:

@@ -1,0 +1,13 @@
+on:
+  push: verify
+workflows:
+  verify:
+    tasks:
+      - name: tests
+        cubes:
+          - name: python
+            image: python:3.12.10-slim-bookworm
+            script:
+              - pip install -r requirements.lock
+              - python -m pytest -q
+              - python scripts/check_contract.py

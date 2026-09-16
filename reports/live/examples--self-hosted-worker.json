@@ -1,0 +1,601 @@
+{
+  "methodology": "1.0.0",
+  "analyzed_at": 1789546395.5020413,
+  "score": 68.8,
+  "coverage": 53.0,
+  "rank_eligible": false,
+  "categories": [
+    {
+      "id": "docs",
+      "name": "Документация",
+      "weight": 15,
+      "score": 65.0,
+      "coverage": 100.0,
+      "metrics": [
+        {
+          "value": true,
+          "score": 100,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "readme",
+          "title": "README",
+          "weight": 25
+        },
+        {
+          "value": false,
+          "score": 0,
+          "facts": [
+            {
+              "label": "Отсутствует license @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "license",
+          "title": "Лицензия",
+          "weight": 20
+        },
+        {
+          "value": true,
+          "score": 100,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": "Эвристика текста, команды не выполнялись",
+          "id": "runbook",
+          "title": "Инструкция запуска",
+          "weight": 20
+        },
+        {
+          "value": true,
+          "score": 100,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": "Эвристика текста, команды не выполнялись",
+          "id": "testguide",
+          "title": "Сборка и тесты",
+          "weight": 20
+        },
+        {
+          "value": false,
+          "score": 0,
+          "facts": [
+            {
+              "label": "Отсутствует contributing @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "contributing",
+          "title": "CONTRIBUTING",
+          "weight": 10
+        },
+        {
+          "value": false,
+          "score": 0,
+          "facts": [
+            {
+              "label": "Отсутствует codeowners @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "codeowners",
+          "title": "CODEOWNERS",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "name": "CI/CD",
+      "weight": 15,
+      "score": 100.0,
+      "coverage": 20.0,
+      "metrics": [
+        {
+          "value": true,
+          "score": 100,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "configured",
+          "title": "Конфигурация CI",
+          "weight": 20
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "success_rate",
+          "title": "Успешность CI",
+          "weight": 60
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "stability",
+          "title": "Стабильность CI",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "weight": 20,
+      "score": null,
+      "coverage": 0.0,
+      "metrics": [
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "sast",
+          "title": "SAST",
+          "weight": 40
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "sca",
+          "title": "SCA",
+          "weight": 35
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "secrets",
+          "title": "Secret scanning",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "id": "activity",
+      "name": "Активность",
+      "weight": 15,
+      "score": 0.0,
+      "coverage": 100.0,
+      "metrics": [
+        {
+          "value": 0,
+          "score": 0.0,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "active_weeks",
+          "title": "Активные недели",
+          "weight": 55
+        },
+        {
+          "value": "Нет содержательных коммитов за 90 дней",
+          "score": 0,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "recency",
+          "title": "Давность коммита",
+          "weight": 35
+        },
+        {
+          "value": 0,
+          "score": 0.0,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "contributors",
+          "title": "Авторы изменений",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "issues",
+      "name": "Issues",
+      "weight": 15,
+      "score": null,
+      "coverage": 0.0,
+      "metrics": [
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "response",
+          "title": "Первый ответ",
+          "weight": 45
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "closure",
+          "title": "Время закрытия",
+          "weight": 30
+        },
+        {
+          "value": null,
+          "score": null,
+          "facts": [],
+          "note": "Источник не предоставил данные",
+          "id": "stale",
+          "title": "Зависшие задачи",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "name": "Состояние кода",
+      "weight": 20,
+      "score": 100.0,
+      "coverage": 100.0,
+      "metrics": [
+        {
+          "value": 0.0,
+          "score": 100.0,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "todo_density",
+          "title": "TODO/FIXME на 1000 строк",
+          "weight": 45
+        },
+        {
+          "value": 0,
+          "score": 100,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "old_todo",
+          "title": "Давние TODO/FIXME",
+          "weight": 35
+        },
+        {
+          "value": 0.0,
+          "score": 100.0,
+          "facts": [
+            {
+              "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+              "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+            }
+          ],
+          "note": null,
+          "id": "large_files",
+          "title": "Крупные исходные файлы",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "activity.active_weeks",
+      "category": "Активность",
+      "priority": "P1",
+      "problem": "Активные недели: 0.0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Распределите содержательные изменения по времени.",
+      "facts": [
+        {
+          "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 55.0,
+      "delta_score": 12.7,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    },
+    {
+      "id": "activity.recency",
+      "category": "Активность",
+      "priority": "P1",
+      "problem": "Давность коммита: 0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Проверьте актуальность проекта и план сопровождения.",
+      "facts": [
+        {
+          "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 35.0,
+      "delta_score": 8.1,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    },
+    {
+      "id": "docs.license",
+      "category": "Документация",
+      "priority": "P2",
+      "problem": "Лицензия: 0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Добавьте лицензию с понятными условиями использования.",
+      "facts": [
+        {
+          "label": "Отсутствует license @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 20.0,
+      "delta_score": 4.6,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    },
+    {
+      "id": "activity.contributors",
+      "category": "Активность",
+      "priority": "P2",
+      "problem": "Авторы изменений: 0.0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Расширьте круг сопровождающих и передачу знаний.",
+      "facts": [
+        {
+          "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 10.0,
+      "delta_score": 2.3,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    },
+    {
+      "id": "docs.contributing",
+      "category": "Документация",
+      "priority": "P2",
+      "problem": "CONTRIBUTING: 0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Опишите порядок внесения изменений.",
+      "facts": [
+        {
+          "label": "Отсутствует contributing @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 10.0,
+      "delta_score": 2.3,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    },
+    {
+      "id": "docs.codeowners",
+      "category": "Документация",
+      "priority": "P3",
+      "problem": "CODEOWNERS: 0/100",
+      "why": "Этот показатель влияет на воспроизводимость, сопровождение или риск проекта.",
+      "action": "Назначьте владельцев областей кода.",
+      "facts": [
+        {
+          "label": "Отсутствует codeowners @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+          "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+        }
+      ],
+      "delta_category": 5.0,
+      "delta_score": 1.2,
+      "impact_note": "Верхняя оценка при доведении одного показателя до 100, остальных данных без изменений."
+    }
+  ],
+  "strengths": [
+    "CI/CD",
+    "Состояние кода"
+  ],
+  "weaknesses": [
+    "Активность"
+  ],
+  "input_sha256": "3b3ed21434b18b6f084fbcd1b7c91419a65123e7177a80ca8165e28e0b33e9b0",
+  "inputs": {
+    "docs": {
+      "license": {
+        "value": false,
+        "score": 0,
+        "facts": [
+          {
+            "label": "Отсутствует license @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "contributing": {
+        "value": false,
+        "score": 0,
+        "facts": [
+          {
+            "label": "Отсутствует contributing @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "codeowners": {
+        "value": false,
+        "score": 0,
+        "facts": [
+          {
+            "label": "Отсутствует codeowners @ 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "readme": {
+        "value": true,
+        "score": 100,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "runbook": {
+        "value": true,
+        "score": 100,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": "Эвристика текста, команды не выполнялись"
+      },
+      "testguide": {
+        "value": true,
+        "score": 100,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": "Эвристика текста, команды не выполнялись"
+      }
+    },
+    "code": {
+      "todo_density": {
+        "value": 0.0,
+        "score": 100.0,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "large_files": {
+        "value": 0.0,
+        "score": 100.0,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "old_todo": {
+        "value": 0,
+        "score": 100,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      }
+    },
+    "activity": {
+      "active_weeks": {
+        "value": 0,
+        "score": 0.0,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "contributors": {
+        "value": 0,
+        "score": 0.0,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      },
+      "recency": {
+        "value": "Нет содержательных коммитов за 90 дней",
+        "score": 0,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      }
+    },
+    "ci": {
+      "configured": {
+        "value": true,
+        "score": 100,
+        "facts": [
+          {
+            "label": "Git snapshot 534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+            "url": "https://sourcecraft.dev/examples/self-hosted-worker"
+          }
+        ],
+        "note": null
+      }
+    }
+  },
+  "diagnostics": {
+    "git": {
+      "status": "ok",
+      "head": "534f98ce21054dfcfac5ab94af5c135ed3cf20c2",
+      "files": 3,
+      "lines": 171,
+      "skipped_files": 0,
+      "commits_90d": 0,
+      "bytes_read": 24757
+    },
+    "rest": {
+      "status": "unavailable",
+      "reason": "Git-only report; no SourceCraft PAT provided"
+    },
+    "appsec": {
+      "status": "unavailable",
+      "reason": "No verified AppSec results interface"
+    }
+  }
+}
